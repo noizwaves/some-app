@@ -1,0 +1,11 @@
+kind: Project
+name: some-app 
+defaultEnvironment: local
+environments:
+  - name: local
+providers:
+  - name: minikube
+    environments: [local]
+sources:
+  - name: some-module
+    repositoryUrl: git@github.com:noizwaves/some-module.git#main
