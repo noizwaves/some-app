@@ -11,3 +11,6 @@ providers:
 sources:
   - name: some-module
     repositoryUrl: git@github.com:noizwaves/some-module.git#main
+modules:
+  include:
+    - local-module/**/*

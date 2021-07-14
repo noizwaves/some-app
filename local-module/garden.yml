@@ -1,0 +1,11 @@
+kind: Module
+description: local module
+type: container
+name: local-module
+image: nginx:latest
+services:
+  - name: local-module
+tasks:
+  - name: hello-world-2-return-of-the-world
+    command: [echo, "hello world 2"]
+
