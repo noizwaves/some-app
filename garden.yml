@@ -10,4 +10,4 @@ providers:
     namespace: some-app
 sources:
   - name: some-module
-    repositoryUrl: git@github.com:noizwaves/some-module.git#main
+    repositoryUrl: git@github.com:noizwaves/some-module.git#non-root-dir
