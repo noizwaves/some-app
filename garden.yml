@@ -1,11 +1,13 @@
 kind: Project
-name: some-app 
+name: some-app
 defaultEnvironment: local
 environments:
   - name: local
 providers:
-  - name: minikube
+  - name: local-kubernetes
     environments: [local]
+    context: minikube
+    namespace: some-app
 sources:
   - name: some-module
     repositoryUrl: git@github.com:noizwaves/some-module.git#main
